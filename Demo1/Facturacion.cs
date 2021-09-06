@@ -32,14 +32,30 @@ namespace Demo1
                 MessageBox.Show("Ha ocurrido un error" + ex.Message);
 
             }
-
-           
-
         }
 
         private void btncolocar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtCodigoCli.Text.Trim()) == false)
+            {
+                try
+                {
+                    string cmd = string.Format("Select nom_cliente from clientes where iD_cliente ='{0}'", txtCodigoCli.Text.Trim());
+                    DataSet ds = Utilidades.Ejecutar(cmd);
+                    txtCliente.Text = ds.Tables[0].Rows[0]["Nom_cliente"].ToString().Trim();
+                    txtCodProd.Focus();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Ha icurrido un erro " + ex.Message);
+
+                }
+            }
         }
     }
 }

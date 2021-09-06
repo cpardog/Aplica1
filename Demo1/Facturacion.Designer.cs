@@ -28,18 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblLeAtiende = new System.Windows.Forms.Label();
-            this.txtCodigoCli = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.txtCliente = new System.Windows.Forms.TextBox();
-            this.txtCodProd = new System.Windows.Forms.TextBox();
-            this.txtDesProd = new System.Windows.Forms.TextBox();
-            this.txtCantProd = new System.Windows.Forms.TextBox();
-            this.txtPrecProd = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btncolocar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
@@ -48,7 +43,16 @@
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnFacturar = new System.Windows.Forms.Button();
             this.lblTotal = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCodigoCli = new Milibreria.ErrorTxtBox();
+            this.txtCliente = new Milibreria.ErrorTxtBox();
+            this.txtCodProd = new Milibreria.ErrorTxtBox();
+            this.txtDesProd = new Milibreria.ErrorTxtBox();
+            this.txtPrecProd = new Milibreria.ErrorTxtBox();
+            this.txtCantProd = new Milibreria.ErrorTxtBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSalir
@@ -106,13 +110,6 @@
             this.lblLeAtiende.TabIndex = 4;
             this.lblLeAtiende.Text = "Le atiende";
             // 
-            // txtCodigoCli
-            // 
-            this.txtCodigoCli.Location = new System.Drawing.Point(161, 82);
-            this.txtCodigoCli.Name = "txtCodigoCli";
-            this.txtCodigoCli.Size = new System.Drawing.Size(100, 20);
-            this.txtCodigoCli.TabIndex = 6;
-            // 
             // btnBuscar
             // 
             this.btnBuscar.Location = new System.Drawing.Point(297, 77);
@@ -121,41 +118,7 @@
             this.btnBuscar.TabIndex = 7;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
-            // 
-            // txtCliente
-            // 
-            this.txtCliente.Location = new System.Drawing.Point(161, 116);
-            this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(100, 20);
-            this.txtCliente.TabIndex = 8;
-            // 
-            // txtCodProd
-            // 
-            this.txtCodProd.Location = new System.Drawing.Point(35, 164);
-            this.txtCodProd.Name = "txtCodProd";
-            this.txtCodProd.Size = new System.Drawing.Size(102, 20);
-            this.txtCodProd.TabIndex = 9;
-            // 
-            // txtDesProd
-            // 
-            this.txtDesProd.Location = new System.Drawing.Point(203, 164);
-            this.txtDesProd.Name = "txtDesProd";
-            this.txtDesProd.Size = new System.Drawing.Size(134, 20);
-            this.txtDesProd.TabIndex = 10;
-            // 
-            // txtCantProd
-            // 
-            this.txtCantProd.Location = new System.Drawing.Point(569, 163);
-            this.txtCantProd.Name = "txtCantProd";
-            this.txtCantProd.Size = new System.Drawing.Size(100, 20);
-            this.txtCantProd.TabIndex = 11;
-            // 
-            // txtPrecProd
-            // 
-            this.txtPrecProd.Location = new System.Drawing.Point(403, 164);
-            this.txtPrecProd.Name = "txtPrecProd";
-            this.txtPrecProd.Size = new System.Drawing.Size(100, 20);
-            this.txtPrecProd.TabIndex = 12;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // dataGridView1
             // 
@@ -230,11 +193,77 @@
             this.lblTotal.TabIndex = 20;
             this.lblTotal.Text = "Total";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(524, 64);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 21;
+            // 
+            // txtCodigoCli
+            // 
+            this.txtCodigoCli.Location = new System.Drawing.Point(161, 79);
+            this.txtCodigoCli.Name = "txtCodigoCli";
+            this.txtCodigoCli.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigoCli.TabIndex = 22;
+            this.txtCodigoCli.Validar = true;
+            // 
+            // txtCliente
+            // 
+            this.txtCliente.Location = new System.Drawing.Point(161, 116);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(100, 20);
+            this.txtCliente.TabIndex = 23;
+            this.txtCliente.Validar = true;
+            // 
+            // txtCodProd
+            // 
+            this.txtCodProd.Location = new System.Drawing.Point(42, 161);
+            this.txtCodProd.Name = "txtCodProd";
+            this.txtCodProd.Size = new System.Drawing.Size(100, 20);
+            this.txtCodProd.TabIndex = 24;
+            this.txtCodProd.Validar = true;
+            // 
+            // txtDesProd
+            // 
+            this.txtDesProd.Location = new System.Drawing.Point(191, 161);
+            this.txtDesProd.Name = "txtDesProd";
+            this.txtDesProd.Size = new System.Drawing.Size(157, 20);
+            this.txtDesProd.TabIndex = 25;
+            this.txtDesProd.Validar = true;
+            // 
+            // txtPrecProd
+            // 
+            this.txtPrecProd.Location = new System.Drawing.Point(385, 164);
+            this.txtPrecProd.Name = "txtPrecProd";
+            this.txtPrecProd.Size = new System.Drawing.Size(102, 20);
+            this.txtPrecProd.TabIndex = 26;
+            this.txtPrecProd.Validar = true;
+            // 
+            // txtCantProd
+            // 
+            this.txtCantProd.Location = new System.Drawing.Point(550, 161);
+            this.txtCantProd.Name = "txtCantProd";
+            this.txtCantProd.Size = new System.Drawing.Size(102, 20);
+            this.txtCantProd.TabIndex = 27;
+            this.txtCantProd.Validar = true;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Facturacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(879, 561);
+            this.Controls.Add(this.txtCantProd);
+            this.Controls.Add(this.txtPrecProd);
+            this.Controls.Add(this.txtDesProd);
+            this.Controls.Add(this.txtCodProd);
+            this.Controls.Add(this.txtCliente);
+            this.Controls.Add(this.txtCodigoCli);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.btnFacturar);
             this.Controls.Add(this.btnNuevo);
@@ -243,13 +272,7 @@
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btncolocar);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.txtPrecProd);
-            this.Controls.Add(this.txtCantProd);
-            this.Controls.Add(this.txtDesProd);
-            this.Controls.Add(this.txtCodProd);
-            this.Controls.Add(this.txtCliente);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.txtCodigoCli);
             this.Controls.Add(this.lblLeAtiende);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -263,13 +286,7 @@
             this.Controls.SetChildIndex(this.label3, 0);
             this.Controls.SetChildIndex(this.label4, 0);
             this.Controls.SetChildIndex(this.lblLeAtiende, 0);
-            this.Controls.SetChildIndex(this.txtCodigoCli, 0);
             this.Controls.SetChildIndex(this.btnBuscar, 0);
-            this.Controls.SetChildIndex(this.txtCliente, 0);
-            this.Controls.SetChildIndex(this.txtCodProd, 0);
-            this.Controls.SetChildIndex(this.txtDesProd, 0);
-            this.Controls.SetChildIndex(this.txtCantProd, 0);
-            this.Controls.SetChildIndex(this.txtPrecProd, 0);
             this.Controls.SetChildIndex(this.dataGridView1, 0);
             this.Controls.SetChildIndex(this.btncolocar, 0);
             this.Controls.SetChildIndex(this.btnSalir, 0);
@@ -279,7 +296,15 @@
             this.Controls.SetChildIndex(this.btnNuevo, 0);
             this.Controls.SetChildIndex(this.btnFacturar, 0);
             this.Controls.SetChildIndex(this.lblTotal, 0);
+            this.Controls.SetChildIndex(this.textBox1, 0);
+            this.Controls.SetChildIndex(this.txtCodigoCli, 0);
+            this.Controls.SetChildIndex(this.txtCliente, 0);
+            this.Controls.SetChildIndex(this.txtCodProd, 0);
+            this.Controls.SetChildIndex(this.txtDesProd, 0);
+            this.Controls.SetChildIndex(this.txtPrecProd, 0);
+            this.Controls.SetChildIndex(this.txtCantProd, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -292,13 +317,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblLeAtiende;
-        private System.Windows.Forms.TextBox txtCodigoCli;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.TextBox txtCliente;
-        private System.Windows.Forms.TextBox txtCodProd;
-        private System.Windows.Forms.TextBox txtDesProd;
-        private System.Windows.Forms.TextBox txtCantProd;
-        private System.Windows.Forms.TextBox txtPrecProd;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btncolocar;
         private System.Windows.Forms.Button btnEliminar;
@@ -307,5 +326,13 @@
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Button btnFacturar;
         private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.TextBox textBox1;
+        private Milibreria.ErrorTxtBox txtCodigoCli;
+        private Milibreria.ErrorTxtBox txtCliente;
+        private Milibreria.ErrorTxtBox txtCodProd;
+        private Milibreria.ErrorTxtBox txtDesProd;
+        private Milibreria.ErrorTxtBox txtPrecProd;
+        private Milibreria.ErrorTxtBox txtCantProd;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
