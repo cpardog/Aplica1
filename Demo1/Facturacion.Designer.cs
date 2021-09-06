@@ -41,7 +41,7 @@
             this.txtCantProd = new System.Windows.Forms.TextBox();
             this.txtPrecProd = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnColocar = new System.Windows.Forms.Button();
+            this.btncolocar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
@@ -165,14 +165,14 @@
             this.dataGridView1.Size = new System.Drawing.Size(659, 274);
             this.dataGridView1.TabIndex = 13;
             // 
-            // btnColocar
+            // btncolocar
             // 
-            this.btnColocar.Location = new System.Drawing.Point(735, 161);
-            this.btnColocar.Name = "btnColocar";
-            this.btnColocar.Size = new System.Drawing.Size(96, 23);
-            this.btnColocar.TabIndex = 14;
-            this.btnColocar.Text = "Colocar";
-            this.btnColocar.UseVisualStyleBackColor = true;
+            this.btncolocar.Location = new System.Drawing.Point(735, 161);
+            this.btncolocar.Name = "btncolocar";
+            this.btncolocar.Size = new System.Drawing.Size(96, 23);
+            this.btncolocar.TabIndex = 14;
+            this.btncolocar.Text = "Colocar";
+            this.btncolocar.UseVisualStyleBackColor = true;
             // 
             // btnEliminar
             // 
@@ -240,7 +240,7 @@
             this.Controls.Add(this.btnProductos);
             this.Controls.Add(this.btnClientes);
             this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.btnColocar);
+            this.Controls.Add(this.btncolocar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtPrecProd);
             this.Controls.Add(this.txtCantProd);
@@ -270,7 +270,7 @@
             this.Controls.SetChildIndex(this.txtCantProd, 0);
             this.Controls.SetChildIndex(this.txtPrecProd, 0);
             this.Controls.SetChildIndex(this.dataGridView1, 0);
-            this.Controls.SetChildIndex(this.btnColocar, 0);
+            this.Controls.SetChildIndex(this.btncolocar, 0);
             this.Controls.SetChildIndex(this.btnSalir, 0);
             this.Controls.SetChildIndex(this.btnEliminar, 0);
             this.Controls.SetChildIndex(this.btnClientes, 0);
@@ -299,7 +299,7 @@
         private System.Windows.Forms.TextBox txtCantProd;
         private System.Windows.Forms.TextBox txtPrecProd;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnColocar;
+        private System.Windows.Forms.Button btncolocar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.Button btnProductos;
