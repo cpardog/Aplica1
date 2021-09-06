@@ -1,0 +1,35 @@
+C:\Users\cpard\AppData\Local\Temporary Projects\Demo1\bin\Debug\Demo1.exe.config
+C:\Users\cpard\AppData\Local\Temporary Projects\Demo1\bin\Debug\Demo1.exe
+C:\Users\cpard\AppData\Local\Temporary Projects\Demo1\bin\Debug\Demo1.pdb
+C:\Users\cpard\AppData\Local\Temporary Projects\Demo1\obj\Debug\Demo1.csprojAssemblyReference.cache
+C:\Users\cpard\AppData\Local\Temporary Projects\Demo1\obj\Debug\Demo1.Form1.resources
+C:\Users\cpard\AppData\Local\Temporary Projects\Demo1\obj\Debug\Demo1.Properties.Resources.resources
+C:\Users\cpard\AppData\Local\Temporary Projects\Demo1\obj\Debug\Demo1.csproj.GenerateResource.cache
+C:\Users\cpard\AppData\Local\Temporary Projects\Demo1\obj\Debug\Demo1.csproj.CoreCompileInputs.cache
+C:\Users\cpard\AppData\Local\Temporary Projects\Demo1\obj\Debug\Demo1.exe
+C:\Users\cpard\AppData\Local\Temporary Projects\Demo1\obj\Debug\Demo1.pdb
+C:\Users\cpard\source\repos\Demo1\Demo1\bin\Debug\Demo1.exe.config
+C:\Users\cpard\source\repos\Demo1\Demo1\bin\Debug\Demo1.exe
+C:\Users\cpard\source\repos\Demo1\Demo1\bin\Debug\Demo1.pdb
+C:\Users\cpard\source\repos\Demo1\Demo1\bin\Debug\Milibreria.dll
+C:\Users\cpard\source\repos\Demo1\Demo1\bin\Debug\Milibreria.pdb
+C:\Users\cpard\source\repos\Demo1\Demo1\obj\Debug\Demo1.csprojAssemblyReference.cache
+C:\Users\cpard\source\repos\Demo1\Demo1\obj\Debug\Demo1.ConsultaClientes.resources
+C:\Users\cpard\source\repos\Demo1\Demo1\obj\Debug\Demo1.ConsultarProducto.resources
+C:\Users\cpard\source\repos\Demo1\Demo1\obj\Debug\Demo1.Consultas.resources
+C:\Users\cpard\source\repos\Demo1\Demo1\obj\Debug\Demo1.ContenedorPrincipal.resources
+C:\Users\cpard\source\repos\Demo1\Demo1\obj\Debug\Demo1.Facturacion.resources
+C:\Users\cpard\source\repos\Demo1\Demo1\obj\Debug\Demo1.FormBase.resources
+C:\Users\cpard\source\repos\Demo1\Demo1\obj\Debug\Demo1.Mantenimiento.resources
+C:\Users\cpard\source\repos\Demo1\Demo1\obj\Debug\Demo1.MantenimientoCliente.resources
+C:\Users\cpard\source\repos\Demo1\Demo1\obj\Debug\Demo1.MantenimientoProducto.resources
+C:\Users\cpard\source\repos\Demo1\Demo1\obj\Debug\Demo1.Procesos.resources
+C:\Users\cpard\source\repos\Demo1\Demo1\obj\Debug\Demo1.VentanaAdmin.resources
+C:\Users\cpard\source\repos\Demo1\Demo1\obj\Debug\Demo1.VentanaLogin.resources
+C:\Users\cpard\source\repos\Demo1\Demo1\obj\Debug\Demo1.Properties.Resources.resources
+C:\Users\cpard\source\repos\Demo1\Demo1\obj\Debug\Demo1.VentanaUser.resources
+C:\Users\cpard\source\repos\Demo1\Demo1\obj\Debug\Demo1.csproj.GenerateResource.cache
+C:\Users\cpard\source\repos\Demo1\Demo1\obj\Debug\Demo1.csproj.CoreCompileInputs.cache
+C:\Users\cpard\source\repos\Demo1\Demo1\obj\Debug\Demo1.csproj.CopyComplete
+C:\Users\cpard\source\repos\Demo1\Demo1\obj\Debug\Demo1.exe
+C:\Users\cpard\source\repos\Demo1\Demo1\obj\Debug\Demo1.pdb
