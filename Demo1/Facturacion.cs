@@ -36,5 +36,10 @@ namespace Demo1
            
 
         }
+
+        private void btncolocar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

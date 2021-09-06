@@ -173,6 +173,7 @@
             this.btncolocar.TabIndex = 14;
             this.btncolocar.Text = "Colocar";
             this.btncolocar.UseVisualStyleBackColor = true;
+            this.btncolocar.Click += new System.EventHandler(this.btncolocar_Click);
             // 
             // btnEliminar
             // 
